@@ -28,7 +28,6 @@ header {
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
-    background-color: $marooncolor;
     span {
         font-size: 1.6rem;
         font-weight: $lightWeight;
@@ -45,17 +44,26 @@ header {
     .small-#{$i} {flex-basis: $w;}
 }
 
+main img {
+    width: 100%;
+    height: auto;
+}
+
 // styling row //
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: #333 solid 1px;
+    margin: 1rem 0;
+    padding: 0 8px;
+
 }
 
 // styling column //
 .column {
-    border: blue($color: #000000) dashed 1px;
+    padding: 0 8px;
+    margin: 8px 0;
+
 }
 
 // humburger //
@@ -127,19 +135,24 @@ header {
 
 
 
-
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
-        font-size: 1.5rem;
-        color: $greycolor;
-        font-weight: $lightWeight
+        font-size: 2rem;
+        color: $marooncolor;
+        font-weight: 300;
     }
     p {
         padding: .5rem $gutter;
         color: #333;
         line-height: $leading;
+    }
+    h2 {
+        color: $marooncolor;
+        font-size: 1.5rem;
+        font-weight: 300;
+
     }
 }// end main
 
